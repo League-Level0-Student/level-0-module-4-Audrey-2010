@@ -12,17 +12,21 @@ public class SleepyHead {
 		/************************  SLEEPY HEAD  **************************/
 		boolean isWeekend;
 		// Write code to ask the user what day it is.
-        
-		// Set the boolean isWeekend based on the value they enter
+		String day=JOptionPane.showInputDialog(null,"What day it is?");
+		// Set the boolean isWeekend baseued on the value they enter
 		
 		
-		// If it is the weekend, tell the user they get to sleep in.
-		
+		if (day.equalsIgnoreCase("saturday")) {
+		isWeekend=true               ;}
+		if(day.equalsIgnoreCase("sunday")) {
+			isWeekend=true 	
+		}
 		// If it is not the weekend, tell them to get out of bed and go to school!
-		
-		
-		/************************   STAR STUDENT  **************************/
-
+if isWeekend    {JOptionPane.showMessageDialog(null,"Sleep in, you deserve it")
+}
+else {JOptionPane.showMessageDialog(null,"Get out of bed and go to school!")
+;		/************************   STAR STUDENT  **************************/
+}
 		boolean passedExam;
 		// Write code to ask the user what percentage they scored in their last exam
 
@@ -55,7 +59,7 @@ public class SleepyHead {
 		
 		boolean isRed;
 		// Ask the user what color to draw with. Based on their answer, set the isRed variable
-		
+		 
 		
 		boolean isSquare;		
 		// Now ask the user what shape to draw. Based on their answer, set the isSquare variable
