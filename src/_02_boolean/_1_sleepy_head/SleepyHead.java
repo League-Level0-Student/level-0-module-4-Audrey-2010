@@ -18,13 +18,15 @@ public class SleepyHead {
 		
 		if (day.equalsIgnoreCase("saturday")) {
 		isWeekend=true               ;}
-		if(day.equalsIgnoreCase("sunday")) {
-			isWeekend=true 	
+		else if(day.equalsIgnoreCase("sunday")) {
+			isWeekend=true; 	
+			
 		}
+		else { isWeekend=false;}
+		
 		// If it is not the weekend, tell them to get out of bed and go to school!
-if isWeekend    {JOptionPane.showMessageDialog(null,"Sleep in, you deserve it")
-}
-else {JOptionPane.showMessageDialog(null,"Get out of bed and go to school!")
+if (isWeekend)    {JOptionPane.showMessageDialog(null,"Sleep in, you deserve it");}
+else  {JOptionPane.showMessageDialog(null,"Get out of bed and go to school!")
 ;		/************************   STAR STUDENT  **************************/
 }
 		boolean passedExam;
